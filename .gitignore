@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+
+# NEVER commit keys
+privatekey.txt
+*.key
+*.seed
+.env

@@ -1,0 +1,9 @@
+Paste ONE private key on the first line, then save this file as: privatekey.txt
+
+Format: a 0x-prefixed 64-hex private key, e.g.
+0xabc123...   (64 hex chars)
+
+A 12/24-word seed phrase also works, but a single-wallet private key is safer.
+
+USE A BURNER WALLET. Fund it with only what you intend to trade.
+Never commit, zip, or share the file that holds your real key.
