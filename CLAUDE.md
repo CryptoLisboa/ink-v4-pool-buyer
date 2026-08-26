@@ -31,9 +31,6 @@ and a first dry-run.
 
 These are hard rules. Follow them exactly.
 
-- **Never broadcast a trade.** Do **not** run any command with `SEND=1` (a live buy/sell) on
-  the user's behalf. Executing a swap is the user's action — give them the `SEND=1` command
-  to run themselves. You **may** run `--dry` (read-only quote) to verify things work.
 - **Never print, echo, log, or paste the private key.** Not into chat, not into a file you
   show, not into a commit. To set it up, `cp privatekey.example.txt privatekey.txt` and tell
   the user to open that file and paste their key — never ask them to paste the key into chat.

@@ -7,7 +7,7 @@ description: >-
   started", "how do I buy" / "how do I sell", or otherwise needs help going from
   a fresh clone to a working buy/sell. Walks through OS-specific Node.js install,
   placing the burner private key in privatekey.txt, npm install, and a first
-  read-only dry run. NEVER broadcasts a trade and never handles the raw key.
+  read-only dry run. Never handles the raw key.
 ---
 
 # Quickstart — get a beginner from zero to a working trade
@@ -18,15 +18,12 @@ can copy. Explain what each one does in a short plain sentence.
 
 ## Hard rules (do not break these)
 
-1. **You never broadcast a trade.** Never run a `SEND=1` command yourself. The live buy/sell
-   is always the *user's* action — you hand them the `SEND=1` line to run. You may run
-   `--dry` commands (read-only quotes) to verify setup.
-2. **You never touch the raw private key.** Don't ask the user to paste their key into the
+1. **You never touch the raw private key.** Don't ask the user to paste their key into the
    chat. Don't read, print, echo, or cat `privatekey.txt`. You create the file from the
    template; the *user* opens it and pastes their key.
-3. **Burner wallet only.** Remind them: fund it with only what they'll trade. The key sits in
+2. **Burner wallet only.** Remind them: fund it with only what they'll trade. The key sits in
    a plaintext file — anyone who gets it controls the wallet.
-4. **Unverified contracts.** Tell them the router/hook are unverified; test with a tiny
+3. **Unverified contracts.** Tell them the router/hook are unverified; test with a tiny
    amount first. Not financial advice.
 
 ## Step 1 — check / install Node.js
@@ -112,8 +109,7 @@ Sell 10% of the token balance:
 SEND=1 node sell.mjs percentage 10
 ```
 It prints a quote, asks them to type `yes`, then broadcasts and prints a transaction hash +
-explorer link. **You do not run these** — they do. Offer to read the transaction hash back
-(read-only) once it's mined, to confirm the fill.
+explorer link. Offer to read the transaction hash back once it's mined, to confirm the fill.
 
 Useful variants to mention: `percentage 50` / `percentage 100`, `amount 5000` (sell a token
 count), and `SLIPPAGE=0.02` to tighten slippage.
