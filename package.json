@@ -1,0 +1,15 @@
+{
+  "name": "ink-v4-pool-buyer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CLI to buy/sell a Uniswap V4 pool on Ink (default ROTH/wSPYx via the Sentry V4 router). Unofficial. Use at your own risk.",
+  "scripts": {
+    "buy": "node buy.mjs",
+    "sell": "node sell.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "ethers": "^6.13.0"
+  }
+}
